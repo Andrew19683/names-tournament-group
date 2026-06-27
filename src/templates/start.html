@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <style>
+      .names-table {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        width: 300px;
+        align-items: center;
+        margin: auto;
+      }
+      .names-table div {
+        display: contents;
+      }
+      h1 {
+        text-align: center;
+      }
+      .finish-block {
+        text-align: center;
+      }
+      .main-content {
+        display: flex;
+      }
+      .load-data {
+        width: min-content;
+        display: inline-block;
+        word-break: normal;
+        text-align: center;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Добавьте имена участников</h1>
+    <div class="main-content">
+      <div class="names-table">
+        <div class="names-line">
+          <input placeholder="Введите имя" /><button>+</button>
+        </div>
+        <div class="names-line"><span>Агния</span><button>✕</button></div>
+        <div class="names-line"><span>Василиса</span><button>✕</button></div>
+      </div>
+      <div>
+        <button class="load-data">
+          Загрузить данные от&nbsp;другого пользователя
+        </button>
+      </div>
+    </div>
+    <div class="finish-block">
+      <button class="finish-btn">Завершить добавление</button>
+    </div>
+  </body>
+</html>
